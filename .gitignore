@@ -5,8 +5,8 @@
 
 /.quarto/
 
-# Ignore _book 
+# Ignore all contents in _book 
 /_book/**
 
-# But not PDF file in any places
+# But not PDF file in _book
 !/_book/*.pdf
