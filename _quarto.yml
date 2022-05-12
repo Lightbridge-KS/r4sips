@@ -18,8 +18,8 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  #pdf:
-    #documentclass: scrreprt
+  pdf:
+    documentclass: scrreprt
 
 
 # freeze computational output ? (see: https://quarto.org/docs/projects/code-execution.html#freeze)
