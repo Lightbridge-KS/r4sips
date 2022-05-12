@@ -9,4 +9,4 @@
 /_book/
 
 # But not PDF file in any places
-!*.pdf
+!/_book/*.pdf
