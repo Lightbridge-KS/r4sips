@@ -30,4 +30,4 @@ format:
 
 
 # freeze computational output ? (see: https://quarto.org/docs/projects/code-execution.html#freeze)
-#freeze: auto
+freeze: auto
