@@ -9,8 +9,8 @@ book:
   #repo-url: your-repo-url
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - "contents/intro.qmd"
+    - "contents/summary.Rmd"
     - references.qmd
 
 bibliography: references.bib
