@@ -4,3 +4,9 @@
 .Ruserdata
 
 /.quarto/
+
+# Ignore _book 
+/_book/
+
+# But not PDF file in any places
+!*.pdf
