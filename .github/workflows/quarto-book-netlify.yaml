@@ -28,8 +28,8 @@ jobs:
 
       - name: Render book to all format
         # Add any command line argument needed
-        run: | # render HTML only
-          quarto render --to html
+        run: | # render all
+          quarto render --to all
 
       - name: Deploy to Netlify
         id: netlify-deploy
