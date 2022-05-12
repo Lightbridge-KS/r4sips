@@ -1,9 +1,12 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+::: {.callout-tip}
+### About
+This book contains my materials for teaching **R programming** to staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
+:::
 
-```{r}
-1 + 1
-```
+::: {.callout-note}
+
+The contents of this book are during development and subject to change.
+:::
