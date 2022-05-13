@@ -1,0 +1,16 @@
+{
+  "hash": "afc8f9217ca45114d1d98223009eb7ad",
+  "result": {
+    "markdown": "# Install R & RStudio\n\n\n\n\n\n\n## What is R\n\n-   When people say **R**, they usually refer to the [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)).\n\n-   R usually not installed in your computer by default, you'll need to download it from [The Comprehensive R Archive Network](https://cran.r-project.org) maintained by an international team of developers who make the language available for *free*.\n  \n-   When you have R installed, then you can write and run **R code** which is the human-readable text that instructs R interpreter what to do. \n\n## Download & Install R\n\n1. Go to <https://cran.r-project.org>\n   \n2. Follow the links to download R for your operating systems.\n\n![R Download Links](/images/setup/cran-dl-r.png)\n\n### Mac\n\nFor **Mac users**, download the `.pkg` file from the latest release section.\n\n![Download R for Mac](/images/setup/cran-dl-mac.png)\n\n### Windows\n\nFor **Windows users**, I recommend install both the [`base`](https://cloud.r-project.org/bin/windows/base/) version as well as [`Rtools`](https://cloud.r-project.org/bin/windows/Rtools/).\n\n\n![Download R for Windows](/images/setup/cran-dl-win.png)\n\n\n-   **Download [`base`](https://cloud.r-project.org/bin/windows/base/) version** as an `.exe` file which is an installation wizard. It will install R into your program files folders and place a shortcut in your Start menu. Note that you’ll need to have all of the appropriate administration privileges to install new software on your machine.\n\n![Download `base` for Windows](/images/setup/cran-dl-win-base.png)\n\n\n-   **Download [`Rtools`](https://cloud.r-project.org/bin/windows/Rtools/)** which is not R itself but a toolchain for making life easier when you need to install additional R package, so I recommend you to install it as well. Find the **Rtools installer** link to download an installation wizard then follows the instructions.\n\n![Example link to `Rtools42` installer for Windows](/images/setup/cran-dl-win-rtools.png)\n\n\n## What is RStudio\n\n\n\n## Install RStudio\n",
+    "supporting": [
+      "install_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": null
+  }
+}
