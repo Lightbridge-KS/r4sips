@@ -3,7 +3,7 @@
 
 ::: {.callout-tip}
 ### About
-This book contains my materials for teaching **R programming** to staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
+This is my tutorial of **R programming**
 :::
 
 ::: {.callout-note}

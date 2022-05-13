@@ -2,12 +2,12 @@ project:
   type: book
 
 book:
-  title: "R for SI Physiology"
+  title: "R Tutorial"
   author: "Kittipos Sirivongrungson"
   date: "4/16/2022" # `today` for current date when render
   site-url: https://r4sips.netlify.app
   repo-url: https://github.com/Lightbridge-KS/r4sips/tree/main/contents
-  downloads: pdf
+  #downloads: pdf
   chapters:
     - index.qmd
     - "contents/intro.qmd"
@@ -24,9 +24,9 @@ format:
     toc-depth: 3
     code-overflow: scroll
     code-tools: true
-  pdf:
-    documentclass: scrreprt
-    toc-depth: 3
+  #pdf:
+    #documentclass: scrreprt
+    #toc-depth: 3
 
 
 # freeze computational output ? (see: https://quarto.org/docs/projects/code-execution.html#freeze)
