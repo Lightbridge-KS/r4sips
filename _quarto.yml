@@ -1,5 +1,6 @@
 project:
   type: book
+  execute-dir: project # Use project root as working dir
 
 book:
   title: "R Tutorial"
@@ -10,6 +11,9 @@ book:
   #downloads: pdf
   chapters:
     - index.qmd
+    - part: "Setup"
+      chapters:
+      - "/contents/install.qmd"
     - "contents/intro.qmd"
     - "contents/summary.Rmd"
     - references.qmd
