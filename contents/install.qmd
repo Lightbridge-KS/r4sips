@@ -1,12 +1,5 @@
 # Install R & RStudio
 
-```{r}
-#| label: setup
-#| include: false
-here::i_am("contents/install.qmd")
-library(here)
-```
-
 
 ## What is R
 
