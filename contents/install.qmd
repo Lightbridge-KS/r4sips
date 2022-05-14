@@ -14,9 +14,9 @@ library(here)
 
 -   R usually not installed in your computer by default, you'll need to download it from [The Comprehensive R Archive Network](https://cran.r-project.org) maintained by an international team of developers who make the language available for *free*.
   
--   When you have R installed, then you can write and run **R code** which is the human-readable text that instructs R interpreter what to do. 
+-   When you have R installed, then you can write and run **R code** which is the human-readable text that instructs R interpreter (program that execute R code) what to do. 
 
-## Download & Install R
+## Install R
 
 1. Go to <https://cran.r-project.org>
    
@@ -38,18 +38,70 @@ For **Windows users**, I recommend install both the [`base`](https://cloud.r-pro
 ![Download R for Windows](/images/setup/cran-dl-win.png)
 
 
--   **Download [`base`](https://cloud.r-project.org/bin/windows/base/) version** as an `.exe` file which is an installation wizard. It will install R into your program files folders and place a shortcut in your Start menu. Note that you’ll need to have all of the appropriate administration privileges to install new software on your machine.
+::: {.callout-note}
+#### **Download [`base`](https://cloud.r-project.org/bin/windows/base/)**
+
+You'll get an installation wizard (`.exe`). Open them, it will install R into your program files folders and place a shortcut in your Start menu. Note that you’ll need to have all of the appropriate administration privileges to install new software on your machine.
+:::
+
 
 ![Download `base` for Windows](/images/setup/cran-dl-win-base.png)
 
+::: {.callout-note}
+#### **Download [`Rtools`](https://cloud.r-project.org/bin/windows/Rtools/)**
 
--   **Download [`Rtools`](https://cloud.r-project.org/bin/windows/Rtools/)** which is not R itself but a toolchain for making life easier when you need to install additional R package, so I recommend you to install it as well. Find the **Rtools installer** link to download an installation wizard then follows the instructions.
+`Rtools` is not R itself but a toolchain for making life easier when you need to install additional R package, so I recommend you to install it as well. Find the **Rtools installer** link to download an installation wizard (`.exe`) then follows the instructions.
+:::
+
 
 ![Example link to `Rtools42` installer for Windows](/images/setup/cran-dl-win-rtools.png)
 
 
+## Using R Console
+
+After you have R installed, it comes with **R console** application. 
+
+![](/images/setup/R-app-logo.png){fig-align="center" width="20%"}
+
+Open the app, try type `1 + 1` after the prompt `>` and press `Enter` you should see `2`.
+
+```r
+> 1 + 1
+[1] 2
+```
+
+R console app is an interactive command-line REPL (read-eval-print loop). You type R code in there, hit `Enter`, then the R interpreter will evaluate R code and print the result back. It's a simple and quick way to interact with R.
+
+For me, I use R console as a calculator replacement, that's all. 
+
+To do anything serious with R, you'll need RStudio which I will cover these in the next section.
+
+::: {.callout-tip}
+### Tips: R in CLI
+For anyone who prefer using Command Line Interface or Terminall app (Mac) as an R console, open your terminal window and type the command:
+
+```bash
+$ R
+```
+
+which opens an R REPL. You can then execute any R code in there. To exit, type `q()` to quit.
+
+Moreover, I recommend you checkout [radian](https://github.com/randy3k/radian) which is a *modern* R console that comes with multiline editing and rich syntax highlight. I prefer to use it as my main R console now.
+:::
+
+
 ## What is RStudio
 
+RStudio is an IDE (Integrated Development Environment) made for R user. 
+
+It is an application that contains several features and environment to help you write and run R code; perform any data science task involving R, create reproducible report, web application, blog, books, and much more.
 
 
 ## Install RStudio
+
+RStudio is available in open source (free) and commercial (paid) editions. 
+
+-   [Download RStudio](https://www.rstudio.com/products/rstudio/)
+
+The **RStudio Desktop (Open Source Edition)** is enought for most real-world use. You'll not miss important feature in there, so I recommend you install that one. Just click the “Download RStudio” button and follow the simple instructions that follow.
+
