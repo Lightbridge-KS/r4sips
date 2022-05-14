@@ -1,7 +1,7 @@
 {
-  "hash": "01dd8b95e994a271c76f58064cb3a3a8",
+  "hash": "e514ad799b2b10ced9d02b36ca26bbd2",
   "result": {
-    "markdown": "# Introduction\n\nThis is a book created from markdown and executable code.\n\nSee @knuth84 for additional discussion of literate programming.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n![RStudio Panes](/images/setup/rstudio-panes.png){#fig-panes}\n\n\n@fig-panes",
+    "markdown": "# Introduction\n\nThis is a book created from markdown and executable code.\n\nSee @knuth84 for additional discussion of literate programming.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
     "supporting": [
       "intro_files"
     ],
