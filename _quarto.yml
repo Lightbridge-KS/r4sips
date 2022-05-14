@@ -4,7 +4,8 @@ project:
 
 book:
   title: "R Tutorial"
-  author: "Kittipos Sirivongrungson"
+  subtitle: "A modern approach"
+  author: "กิตติพศ​ ศิริวงศ์รังสรร"
   date: "4/16/2022" # `today` for current date when render
   site-url: https://r-tutorial-lightbridge.netlify.app
   repo-url: https://github.com/Lightbridge-KS/r-tutorial/tree/main/contents
@@ -14,6 +15,7 @@ book:
     - part: "Setup"
       chapters:
       - "contents/install.qmd"
+      - "contents/install-th.qmd"
     - "contents/intro.qmd"
     - "contents/summary.Rmd"
     - references.qmd
