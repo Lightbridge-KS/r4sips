@@ -13,7 +13,7 @@ book:
     - index.qmd
     - part: "Setup"
       chapters:
-      - "/contents/install.qmd"
+      - "contents/install.qmd"
     - "contents/intro.qmd"
     - "contents/summary.Rmd"
     - references.qmd
