@@ -90,18 +90,15 @@ Moreover, I recommend you checkout [radian](https://github.com/randy3k/radian) w
 :::
 
 
-## What is RStudio
+## Install RStudio
 
 RStudio is an IDE (Integrated Development Environment) made for R user. 
 
 It is an application that contains several features and environment to help you write and run R code; perform any data science task involving R, create reproducible report, web application, blog, books, and much more.
 
-
-## Install RStudio
-
 RStudio is available in open source (free) and commercial (paid) editions. 
 
--   [Download RStudio](https://www.rstudio.com/products/rstudio/)
+>  [Download RStudio](https://www.rstudio.com/products/rstudio/)
 
-The **RStudio Desktop (Open Source Edition)** is enought for most real-world use. You'll not miss important feature in there, so I recommend you install that one. Just click the “Download RStudio” button and follow the simple instructions that follow.
+The **RStudio Desktop (Open Source Edition)** is enough for most real-world use. You'll not miss important feature in there, so I recommend you install that one. Just click the “Download RStudio” button and follow the simple instructions that follow.
 
