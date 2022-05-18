@@ -3,8 +3,8 @@ project:
   execute-dir: project # Use project root as working dir
 
 book:
-  title: "R for SI Physiology"
-  subtitle: "Introduction to R programming"
+  title: "R4SIPS"
+  subtitle: "An Introduction to R programming for SI Physiology"
   author: "กิตติพศ​ ศิริวงศ์รังสรร"
   date: "4/16/2022" # `today` for current date when render
   site-url: https://r4sips.netlify.app
