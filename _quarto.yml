@@ -5,7 +5,7 @@ project:
 book:
   title: "R4SIPS"
   subtitle: "An Introduction to R programming for SI Physiology"
-  author: "กิตติพศ​ ศิริวงศ์รังสรร"
+  author: "Kittipos Sirivongrungson"
   date: "4/16/2022" # `today` for current date when render
   site-url: https://r4sips.netlify.app
   repo-url: https://github.com/Lightbridge-KS/r4sips
