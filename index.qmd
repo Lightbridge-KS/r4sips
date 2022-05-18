@@ -3,7 +3,7 @@
 
 ::: {.callout-tip}
 ### About
-This is my tutorial of **R programming**
+I made this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
 :::
 
 ::: {.callout-note}
