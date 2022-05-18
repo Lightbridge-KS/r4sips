@@ -3,7 +3,7 @@ project:
   execute-dir: project # Use project root as working dir
 
 book:
-  title: "R for SIPS"
+  title: "R for SI Physiology"
   subtitle: "Introduction to R programming"
   author: "กิตติพศ​ ศิริวงศ์รังสรร"
   date: "4/16/2022" # `today` for current date when render
@@ -15,8 +15,6 @@ book:
     - part: "Setup"
       chapters:
       - "contents/install.qmd"
-    - "contents/intro.qmd"
-    - "contents/summary.Rmd"
     - references.qmd
 
 bibliography: references.bib
