@@ -18,6 +18,7 @@ book:
       - "contents/rstudio.qmd"
     - references.qmd
 
+
 bibliography: references.bib
 
 format:

@@ -80,7 +80,7 @@ $ R
 นอกจากนี้ ผมแนะนำให้ลองดู [radian](https://github.com/randy3k/radian) ซึ่งเป็น *modern* R console ยุคใหม่ ที่สามารถทำ multiline editing และมี syntax highlighting ด้วย ส่วนตัวชอบใช้งานตัวนี้มาก
 :::
 
-## Install RStudio
+## Install RStudio {#sec-install-rstudio}
 
 RStudio เป็น IDE (Integrated Development Environment) ที่สร้างมาสำหรับการใช้งานภาษา R โดยเฉพาะ มี interactive feature หลายอย่างที่ช่วยทำให้เราทำงานทางด้าน data analysis ที่เกี่ยวกับ R ได้ดี เช่นการ ช่วยให้เราใช้ R ในการเขียน reproducible report, สร้าง web application หรือแม้กระทั่ง เขียน blog หรือเขียนหนังสือโดยใช้ R ได้ด้วย
 

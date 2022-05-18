@@ -1,17 +1,102 @@
-# Using RStudio
+# RStudio
+
+## Hello RStudio
+
+เมื่อได้ติดตั้ง RStudio แล้วจาก @sec-install-rstudio ให้เปิด RStudio application ที่มีหน้าตาแบบ @fig-rstudio-app
+
+![RStudio App](/images/rstudio/RStudio-app-logo.png){#fig-rstudio-app width="25%"}
+
+จะเห็นหน้าต่างในรูปแบบ @fig-rstudio-panes ซึ่งจะเห็นมีอยู่ 3 pane (หน้าต่าง)
 
 
-เปิด RStudio application
-
-![RStudio App](/images/setup/RStudio-app-logo.png){#fig-rstudio-app width="25%"}
-
-จะเห็นหน้าต่างในรูปแบบ @fig-rstudio-panes
+![RStudio User Interface](/images/rstudio/rstudio-panes.png){#fig-rstudio-panes}
 
 
-![RStudio User Interface](/images/setup/rstudio-panes.png){#fig-rstudio-panes}
+ให้ลองไปที่ menu bar ด้านบน icon ซ้ายสุด คลิก แล้วกดปุ่มสร้าง R Script ดัง @fig-create-r-script
+(หรือใช้ keyboard shortcut `Ctr-Shift-N` [Windows], `Cmd-Shift-N` [Mac])
+
+![New R Script](/images/rstudio/create-r-script.png){#fig-create-r-script width="100%"}
+
+## RStudio Panes
+
+![Default RStudio Panes Layout](/diagrams/rstudio-panes-tut.drawio.svg){#fig-rstudio-panes-tut width="100%"}
+
+จะเห็น **RStudio pane** ครบทั้ง 4 หน้าต่างดัง @fig-rstudio-panes-tut มีหน้าที่การใช้งานดังนี้
+
+### Console pane
+
+**Console pane** จะทำงานลักษณะเป็น **REPL** (read-eval-print loop) คือไว้สำหรับพิมพ์ code เข้าไป กด `Enter` จากนั้น output ก็จะแสดงออกมาทันที เหมาะสำหรับการ run code ที่ไม่ซับซ้อนมาก อย่างรวดเร็ว เพียงชั่วครู่ ที่เราไม่ต้องการ record เก็บไว้
+
+เครื่องหมาย `>` ใน console เรียกว่า **prompt** เป็นจุดที่เราจะเขียน code เข้าไป
+
+ให้ลองพิมพ์ `1 + 1` ที่ Console หลังจาก `>` และเคาะ `Enter` ควรจะเห็นผลลัพท์แบบนี้
+
+```r
+> 1 + 1
+[1] 2
+```
+
+ในบรรทัดแรก `1 + 1` คือคำสั่ง R code ที่เราป้อนให้ R console ซึ่งจะส่งให้ R interpreter ประมวลผล (execute) หรือ **Run code** ที่เราส่งเข้าไป และส่ง output ออกมาในบรรทัดถัดมา ได้ผลลัพท์เป็น `2` นั่นเอง
+
+ลองป้อนคำสั่งการคิดเลขอื่นๆ ต่างๆ ดูเช่น `2 * 3`, `10 / 5` จะเห็นว่า Console นี้เหมาะสำหรับการใช้เป็นเครื่องคิดเลขอย่างง่ายได้เลย
+
+::: {.callout-tip}
+#### Keyboard Shortcut
+ลองนำ cursor ไว้ที่ Console และกด **up / down arrow** ใน keybord ดู จะเห็นว่าเราสามารถ browse history ของคำสั่งก่อนหน้าได้อย่างรวดเร็วใน console ได้ด้วย
+:::
+
+สิ่งที่พิมพ์เข้าไปใน console จะหายไปได้ง่าย จะไม่ได้ถูก save เก็บไว้เป็น file ดังนั้นหากเราต้องการเขียน code ที่ซับซ้อนมากขึ้น หรือต้องการเก็บผลลัพท์เพื่อ **reproducibily** ก็ควรจะเขียนเป็น **Script file** ใน Source pane ที่จะกล่าวถัดไป
+
+### Source pane
+
+**Source pane** เป็นสถานที่ไว้สำหรับเขียน code ที่เราสามารถ save เก็บเป็น script file ได้ โดยจะเป็นที่หลักที่เราจะเขียน code กัน เมื่อเรา execute หรือ **run code** แล้ว ผลลัพท์ที่ได้ก็จะส่งออกไปที่ต่างๆ เช่น ถ้าเป็น text จะส่งออกไปที่ console pane ถ้าเป็น plot ก็จะส่งไปที่ plot pane เป็นต้น
+
+หากทำตาม step ดัง @fig-create-r-script เราจะมีไฟล์ R script ที่เปิดไว้ให้เราอยู่แล้วใน Source pane 
+
+ในบรรทัดที่ 1 ของ R Script ที่อยู่ใน Source pane ให้พิมพ์คำสั่ง:
+
+```r
+print("Hello, World")
+```
+ 
+จากนั้น **Run code** (cursor ยังอยู่ในบรรทัดที่ 1) โดยกดปุ่ม **Run** (วงสีแดง @fig-rstudio-panes-tut) หรือกด `Ctr/Cmd-Enter` โดยจะเป็นการส่ง code ทีละบรรทัดไป execute ที่ R console 
+
+ใน R console จะเห็นว่าหลัง prompt `>` จะมี `print("Hello, World")` ที่ถูกส่งเข้ามาจาก R Script และเมื่อ run code แล้วก็ได้ผลลัพท์ print ออกมาเป็น "Hello, World" ในบรรทัดถัดมา:
 
 
-### Create New R Project
+```r
+> print("Hello, World")
+[1] "Hello, World"
+```
+
+
+::: {.callout-tip}
+#### Keyboard Shortcut
+
+-   **`Ctr/Cmd-Enter`**: Run code ในบรรทัดที่ cursor วางอยู่ หรือ run code เฉพาะจุดได้โดยลาก cursor คลุม code ที่เราต้องการจะ run จากนั้นกด `Ctr/Cmd-Enter`
+
+-   **`Ctr/Cmd-Shift-Enter`**: Source R Script with Echo จะเป็นการ Run code ใน R Script ทั้งไฟล์และส่งผลลัพท์ในแต่ละบรรทัดออกมา
+:::
+
+
+### Other panes
+
+Pane อื่นๆ ที่เหลือใน @fig-rstudio-panes-tut ส่วนใหญ่จะทำหน้าที่ตามชื่อที่ตั้งไว้ ขออธิบายเฉพาะที่ได้ใช้บ่อยดังนี้:
+
+-   **Files:** เป็น file explorer อย่างง่าย เหมาะสำหรับดูไฟล์ต่างๆ ใน R project ของเราได้อย่างรวดเร็ว (อธิบายต่อใน @sec-create-r-proj)
+
+-   **Plots:** แสดง plot จาก code ที่เรา run ให้สร้างกราฟ
+
+-   **Help:** แสดง manual หรือวิธีใช้งานของ R code ต่างๆ สามารถดูได้โดย
+
+    -   พิมพ์ `?` ตามด้วยคำสั่งที่เราต้องการ เช่น `?lm` ใน R console แล้ว `Enter`, หรือ
+
+    -   พิมพ์คำสั่งที่ต้องการใน search box ใน Help pane โดยตรง
+
+
+
+
+## Create R Project {#sec-create-r-proj}
 
 ใน RStudio เราสามารถสร้าง **R project** ซึ่งเปรียบเสมือน "กล่อง" ที่บรรจุเอกสารและข้อมูลต่างๆ ในงานแต่ละชิ้นที่เราทำ เป็นการจัดระเบียบและไม่ให้ข้อมูลจากแต่ละ project มาปะปนกัน
 
@@ -19,7 +104,7 @@
 
 ในแถบเมนูด้านบนซ้าย click **ปุ่มสีฟ้ารูปกล่อง** ที่มีตัว R (ปุ่มที่ 2 จากด้านซ้าย)
 
-![RStudio menu bar](/images/setup/rstudio-menu-bar.png){#fig-rstudio-menu-bar width="100%"}
+![RStudio menu bar](/images/rstudio/rstudio-menu-bar.png){#fig-rstudio-menu-bar width="100%"}
 
 จากนั้นทำตามขั้นตอนดังกล่าว:
 
@@ -32,8 +117,8 @@
 4.  ช่อง **Directory name:** ให้พิมพ์ชื่อ project ที่ต้องการ แนะนำให้ตั้งชื่อที่ไม่มีเว้นวรรค โดยให้ใช้ underscore `_` หรือ dash `-` ในการแยกคำแทน
 
 
-![Create `learn-r` R project directory in my Desktop](/images/setup/create-proj.png){#fig-create-project width="100%"}
+![Create `learn-r` R project directory in my Desktop](/images/rstudio/create-proj.png){#fig-create-project width="100%"}
 
-ในตัวอย่าง @fig-create-project ผมได้สร้าง `learn-r` project ใน Desktop ให้คุณพิมพ์ชื่อที่ต้องการ จากนั้น Click **Create Project**
+ในตัวอย่าง @fig-create-project ได้สร้าง `learn-r` project ใน Desktop ให้พิมพ์ชื่อที่ต้องการ จากนั้น Click **Create Project**
 
 
