@@ -7,8 +7,8 @@ book:
   subtitle: "Introduction to R programming"
   author: "กิตติพศ​ ศิริวงศ์รังสรร"
   date: "4/16/2022" # `today` for current date when render
-  site-url: https://r-tutorial-lightbridge.netlify.app
-  repo-url: https://github.com/Lightbridge-KS/r-tutorial/tree/main/contents
+  site-url: https://r4sips.netlify.app
+  repo-url: https://github.com/Lightbridge-KS/r4sips
   #downloads: pdf
   chapters:
     - index.qmd
