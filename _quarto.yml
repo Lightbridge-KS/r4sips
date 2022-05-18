@@ -15,6 +15,7 @@ book:
     - part: "Setup"
       chapters:
       - "contents/install.qmd"
+      - "contents/rstudio.qmd"
     - references.qmd
 
 bibliography: references.bib
