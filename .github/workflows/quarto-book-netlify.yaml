@@ -28,15 +28,15 @@ jobs:
         run: |
           sudo apt-get install -y libcurl4-openssl-dev
       
-      # For code linking
-      - name: Install {downlit} and {xml2}
-        run: |
-          install.packages(c("downlit", "xml2"))
-        shell: Rscript {0}
-
       # Set up R Environment
       - name: Install R Environment
         uses: r-lib/actions/setup-renv@v2
+      
+      # For code linking
+      - name: Install {downlit} and {xml2}
+        run: |
+          renv::install(c("downlit", "xml2"))
+        shell: Rscript {0}
 
       - name: Render book to all format
         # Add any command line argument needed
