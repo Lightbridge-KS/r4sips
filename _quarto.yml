@@ -6,9 +6,11 @@ book:
   title: "R4SIPS"
   subtitle: "An Introduction to R programming for SI Physiology"
   author: "Kittipos Sirivongrungson"
-  date: "4/16/2022" # `today` for current date when render
+  cover-image: "images/cover.png"
   site-url: https://r4sips.netlify.app
   repo-url: https://github.com/Lightbridge-KS/r4sips
+  repo-branch: master
+  repo-actions: [edit]
   #downloads: pdf
   chapters:
     - index.qmd
@@ -29,6 +31,7 @@ format:
     toc-depth: 3
     code-overflow: scroll
     code-tools: true
+    code-link: true
   #pdf:
     #documentclass: scrreprt
     #toc-depth: 3
