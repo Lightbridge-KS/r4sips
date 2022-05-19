@@ -1,0 +1,35 @@
+# Other tools
+
+นอกเหนือจากการเขียนโปรแกรม R หรือ Python เป็นแล้ว เครื่องมือที่มีประโยชน์อื่นๆ ที่น่าสนใจได้แก่
+
+## Version Control
+
+เวลาทำงานเอกสารบางอย่าง ท่านเคยหรือไม่ ที่ต้องสร้างไฟล์เป็น version ต่างๆ แบบรูปนี้ ([-@fig-report-final])
+
+![Multiple Version of Word Document](/images/tools/report-final.png){#fig-report-final width="40%"}
+
+หากเคย การใช้ Version Control จะช่วยแก้ไขปัญหาแบบนี้ได้
+
+
+Version Control System คือระบบที่สามารถ track การเปลี่ยนแปลงของไฟล์ในระยะต่างๆ ใน project ของเรา โดยตัวที่นิยมกันมากที่สุดคือ [Git](https://git-scm.com) ซึ่งเดิมทีเป็นเครื่องมือของ software developer แต่ก็สามารถใช้ใน project data analysis หรืองานเอกสารที่เป็น text file อะไรก็ได้
+
+[GitHub](https://github.com) เป็นเวปไซต์หนึ่งที่สร้างบนพื้นฐานของ Git ซึ่งช่วยเป็น code repository และ facilitate การ collaboration จากผู้คนทั่วโลก ในการทำ project ไม่ว่าจะเป็นการสร้าง software หรือแม้กระทั่งการเขียนหนังสือ
+
+**[Git](https://git-scm.com) & [GitHub](https://github.com) มี feature เด่นๆ ขอสรุปมาดังนี้:**
+
+-   **Time-machine:** เราสามารถ "snapshot" ไฟล์ต่างๆ ใน project ในระยะต่างๆ ไว้ ทำให้เราสามารถ "ย้อนเวลา" กลับมาสู่ stage ก่อนหน้าได้เมื่อต้องการหากเราทำอะไรผิดพลาด 
+
+-   **Track changes:**  ใน Microsoft Word มี track change ที่ทำให้เราสามารถ review หรือ comment การเปลี่ยนแปลงในไฟล์ได้ หากใช้ [Git](https://git-scm.com) +  ก็สามารถทำได้เช่นกัน และสามารถ track ได้หลายๆ file ด้วย
+
+-   **Branching:**  ในแต่ละ snapshot ของ project เราสามารถสร้าง branch ได้ ([-@fig-marvel-multiverse]) หมายความว่าเราสามารถสร้างไฟล์ที่มีหลาย version และพัฒนาในแต่ละ version คู่ขนานกัน และเมื่อเราพอใจใน version ไหน เราสามารถ merge ในแต่ละส่วนกลับเข้าสู่ main branch ได้
+
+
+![Multiverse branching from Loki series](/images/tools/marvel_multiverse.jpg){#fig-marvel-multiverse width="100%"}
+
+::: {.callout-tip}
+### Let's Git started!
+ถ้าคิดว่า Git + Github น่าใช้สำหรับ R project แล้ว แน่นอนว่ามีหนังสือสอนการใช้แน่นอน ลองอ่านดูได้ที [Happy Git and GitHub for the useR](https://happygitwithr.com)
+:::
+
+
+
