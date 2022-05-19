@@ -73,7 +73,7 @@ print("Hello, World")
 ::: {.callout-tip}
 #### Keyboard Shortcut
 
--   **`Ctr/Cmd-Enter`**: Run code ในบรรทัดที่ cursor วางอยู่ หรือ run code เฉพาะจุดได้โดยลาก cursor คลุม code ที่เราต้องการจะ run จากนั้นกด `Ctr/Cmd-Enter`
+-   **`Ctr/Cmd-Enter`**: Run code ในบรรทัดที่ cursor วางอยู่ *หรือ* run code เฉพาะจุดได้โดยลาก cursor คลุม code ที่เราต้องการจะ run จากนั้นกด `Ctr/Cmd-Enter`
 
 -   **`Ctr/Cmd-Shift-Enter`**: Source R Script with Echo จะเป็นการ Run code ใน R Script ทั้งไฟล์และส่งผลลัพท์ในแต่ละบรรทัดออกมา
 :::
@@ -81,7 +81,7 @@ print("Hello, World")
 
 ### Other panes
 
-Pane อื่นๆ ที่เหลือใน @fig-rstudio-panes-tut ส่วนใหญ่จะทำหน้าที่ตามชื่อที่ตั้งไว้ ขออธิบายเฉพาะที่ได้ใช้บ่อยดังนี้:
+Pane อื่นๆ ที่เหลือใน @fig-rstudio-panes-tut สำหรับผู้เริ่มต้นแนะนำให้ข้ามในส่วนนี้ไปก่อน ส่วนใหญ่จะทำหน้าที่ตามชื่อที่ตั้งไว้ ขออธิบายเฉพาะที่ได้ใช้บ่อยดังนี้:
 
 -   **Files:** เป็น file explorer อย่างง่าย เหมาะสำหรับดูไฟล์ต่างๆ ใน R project ของเราได้อย่างรวดเร็ว (อธิบายต่อใน @sec-create-r-proj)
 
