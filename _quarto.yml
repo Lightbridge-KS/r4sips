@@ -21,7 +21,7 @@ book:
     - part: "Check this out"
       chapters:
       - "contents/r-resources.qmd"
-      - "contents/tips.qmd"
+      - "contents/r-tips.qmd"
     - references.qmd
 
 
