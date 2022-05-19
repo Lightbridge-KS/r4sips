@@ -18,6 +18,10 @@ book:
       chapters:
       - "contents/install.qmd"
       - "contents/rstudio.qmd"
+    - part: "Check this out"
+      chapters:
+      - "contents/r-resources.qmd"
+      - "contents/tips.qmd"
     - references.qmd
 
 
