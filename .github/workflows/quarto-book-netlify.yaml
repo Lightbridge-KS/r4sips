@@ -22,6 +22,11 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.105
 
+      # Install libcurl
+      - name: Install libcurl
+        run: |
+          sudo apt-get install -y libcurl4-openssl-dev
+
       # Set up R Environment
       - name: Install R Environment
         uses: r-lib/actions/setup-renv@v2
