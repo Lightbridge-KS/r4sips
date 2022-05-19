@@ -9,7 +9,7 @@ book:
   cover-image: "images/cover.png"
   site-url: https://r4sips.netlify.app
   repo-url: https://github.com/Lightbridge-KS/r4sips
-  repo-branch: master
+  repo-branch: main
   repo-actions: [edit]
   #downloads: pdf
   chapters:
