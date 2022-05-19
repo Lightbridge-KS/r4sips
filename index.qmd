@@ -5,11 +5,11 @@ description-meta: |
 
 ## Welcome {.unnumbered}
 
-I made this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital. 
+I create this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
 
 ## Remark
 
-::: {.callout-note appearance="simple"}
+::: {.callout-warning appearance="simple"}
 
 Please note that the contents of this book are during development and subject to change.
 :::
