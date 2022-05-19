@@ -1,12 +1,20 @@
-# Preface {.unnumbered}
+---
+description-meta: |
+  This is a book for teaching R programming to staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
+---
 
+## Welcome {.unnumbered}
 
-::: {.callout-tip}
-### About
-I made this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
+I made this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital. 
+
+## Remark
+
+::: {.callout-note appearance="simple"}
+
+Please note that the contents of this book are during development and subject to change.
 :::
 
-::: {.callout-note}
 
-The contents of this book are during development and subject to change.
-:::
+## License {.unnumbered}
+
+This online work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a>.
