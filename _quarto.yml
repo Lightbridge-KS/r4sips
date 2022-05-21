@@ -3,7 +3,7 @@ project:
   execute-dir: project # Use project root as working dir
 
 book:
-  title: "R4SIPS"
+  title: "R for SI Physiology"
   subtitle: "An Introduction to R programming for SI Physiology"
   author: "Kittipos Sirivongrungson"
   cover-image: "images/cover.png"
@@ -14,6 +14,7 @@ book:
   #downloads: pdf
   chapters:
     - index.qmd
+    - "contents/material.qmd"
     - part: "Setup"
       chapters:
       - "contents/install.qmd"
@@ -31,8 +32,9 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: cosmo
+      light: [cosmo]
       dark: superhero
+    css: "assets/styles.css"
     toc-depth: 3
     code-overflow: scroll
     code-tools: true

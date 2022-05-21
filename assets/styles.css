@@ -1,0 +1,27 @@
+
+/* Slides */
+.slide-deck {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: 1pt solid #00539b;
+  background: #ffffff 5px center/3em no-repeat;
+  background-image: url("slide-deck.png");
+}
+
+
+/* VDO */
+.video {
+  padding: 0em 1em 0em 2em;
+  position: relative;
+  font-size: 0.9em;
+}
+
+
+.video:before {
+  content: "\f16a";
+  font-family: FontAwesome;
+  color: #c4302b;
+  left: 5px;
+  position: absolute;
+}
