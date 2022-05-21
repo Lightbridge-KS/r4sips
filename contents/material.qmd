@@ -1,0 +1,24 @@
+# Material {.unnumbered}
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+library(htmltools)
+```
+
+```{r icon_slides, include=FALSE}
+# Insert Slide links with FA Icon
+icon_slides <- function(url) {
+   tagList(
+       fa("file-powerpoint", fill = "maroon"), HTML("&nbsp;"),
+       tags$a(href = url, "Slides")
+   )
+}
+```
+
+
+::: {.slide-deck}
+**Unit 1: R First Step**
+
+`r icon_slides("https://docs.google.com/presentation/d/1GwpYynU4XmX0XZ6jSkdpp9KHQ2hMcS0P65CUbq7oKOs/edit?usp=sharing")`
+
+:::
