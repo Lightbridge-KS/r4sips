@@ -1,0 +1,16 @@
+{
+  "hash": "0492f588917ee6bcb8482714db5f4291",
+  "result": {
+    "markdown": "---\ntitle: \"Tips & Tricks\"\n---\n\n\n\n\n\n-   Use Keyboard Shortcuts to speed your coding (see [-@sec-keyboard-shortcuts])\n\n\n## Keyboard Shortcuts {#sec-keyboard-shortcuts}\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n`````{=html}\n<table class=\"table table-hover\" style=\"margin-left: auto; margin-right: auto;\">\n <thead>\n  <tr>\n   <th style=\"text-align:left;\"> Execute </th>\n   <th style=\"text-align:left;\"> Windows </th>\n   <th style=\"text-align:left;\"> Mac </th>\n  </tr>\n </thead>\n<tbody>\n  <tr>\n   <td style=\"text-align:left;\"> Run code ในบรรทัดที่ cursur วางอยู่ หรือใน selection </td>\n   <td style=\"text-align:left;\"> Ctrl+Enter </td>\n   <td style=\"text-align:left;\"> Cmd+Enter </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Source file (run code ทั้ง file) </td>\n   <td style=\"text-align:left;\"> Ctrl+Shift+Enter </td>\n   <td style=\"text-align:left;\"> Cmd+Shift+Enter </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Knit R Markdown </td>\n   <td style=\"text-align:left;\"> Ctrl+Shift+K </td>\n   <td style=\"text-align:left;\"> Cmd+Shift+K </td>\n  </tr>\n</tbody>\n</table>\n`````\n:::\n:::\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n`````{=html}\n<table class=\"table table-hover\" style=\"margin-left: auto; margin-right: auto;\">\n <thead>\n  <tr>\n   <th style=\"text-align:left;\"> Editing </th>\n   <th style=\"text-align:left;\"> Windows </th>\n   <th style=\"text-align:left;\"> Mac </th>\n  </tr>\n </thead>\n<tbody>\n  <tr>\n   <td style=\"text-align:left;\"> Insert section label </td>\n   <td style=\"text-align:left;\"> Ctrl+Shift+R </td>\n   <td style=\"text-align:left;\"> Cmd+Shift+R </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Insert R Markdown Code Chunk </td>\n   <td style=\"text-align:left;\"> Ctrl+Alt+I </td>\n   <td style=\"text-align:left;\"> Cmd+Option+I </td>\n  </tr>\n</tbody>\n</table>\n`````\n:::\n:::\n\n\n\n**References:**\n\n-   [Keyboard Shortcuts in RStudio](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)\n\n\n## CheatSheet",
+    "supporting": [
+      "r-tips_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
