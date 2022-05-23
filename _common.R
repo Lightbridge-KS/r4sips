@@ -29,7 +29,7 @@ yihui_print <- function(x, ...) {
 kableExtra_print <- function(x, ...){
 
   res <- kableExtra::kbl(x)
-  res  <- kableExtra::kable_styling(res, bootstrap_options = c("striped", "hover"))
+  res  <- kableExtra::kable_styling(res, bootstrap_options = c("hover"))
 
   knitr::asis_output(res)
 
