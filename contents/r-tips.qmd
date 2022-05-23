@@ -1,6 +1,43 @@
-# Tip & Trick
+---
+title: "Tips & Tricks"
+---
+
+```{r setup, include=FALSE}
+here::i_am("contents/r-tips.qmd")
+library(here)
+source(here("_common.R"))
+```
+
+
+-   Use Keyboard Shortcuts to speed your coding (see [-@sec-keyboard-shortcuts])
+
+
+## Keyboard Shortcuts {#sec-keyboard-shortcuts}
+
+```{r}
+#| echo: false
+tibble::tribble(
+    ~`Execute`, ~Windows, ~Mac,
+    "Run code ในบรรทัดที่ cursur วางอยู่ หรือใน selection", "Ctrl+Enter", "Cmd+Enter",
+    "Source file (run code ทั้ง file)", "Ctrl+Shift+Enter", "Cmd+Shift+Enter",
+    "Knit R Markdown", "Ctrl+Shift+K", "Cmd+Shift+K"
+)
+```
+
+
+```{r}
+#| echo: false
+tibble::tribble(
+    ~`Editing`, ~Windows, ~Mac,
+    "Insert section label", "Ctrl+Shift+R", "Cmd+Shift+R",
+    "Insert R Markdown Code Chunk", "Ctrl+Alt+I", "Cmd+Option+I"
+)
+```
+
+
+**References:**
+
+-   [Keyboard Shortcuts in RStudio](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
+
 
 ## CheatSheet
-
-## Keyboard Shortcut
-
