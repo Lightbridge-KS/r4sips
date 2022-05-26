@@ -15,6 +15,12 @@ icon_slides <- function(url) {
 }
 ```
 
+::: {.callout-note}
+### Code
+
+Code material in GitHub can be found: **[here `r fa("github")`](https://github.com/Lightbridge-KS/r4sips-material)** 
+:::
+
 
 ::: {.slide-deck}
 **Unit 1: R First Step**
