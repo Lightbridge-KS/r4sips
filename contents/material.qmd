@@ -15,11 +15,6 @@ icon_slides <- function(url) {
 }
 ```
 
-::: {.callout-note}
-### Code
-
-Code material in GitHub can be found: **[here `r fa("github")`](https://github.com/Lightbridge-KS/r4sips-material)** 
-:::
 
 
 ::: {.slide-deck}
@@ -28,3 +23,12 @@ Code material in GitHub can be found: **[here `r fa("github")`](https://github.c
 `r icon_slides("https://docs.google.com/presentation/d/1GwpYynU4XmX0XZ6jSkdpp9KHQ2hMcS0P65CUbq7oKOs/edit?usp=sharing")`
 
 :::
+
+
+### How to Download Code
+
+1. Go to: **[`r4sips` code material `r fa("github")`](https://github.com/Lightbridge-KS/r4sips-material)** 
+
+2. Go to: `Code` -> `Download Zip` (as in @fig-gh-dl)
+
+![How to download code from GitHub](/images/material/github-dl-zip.png){#fig-gh-dl width="60%"}
