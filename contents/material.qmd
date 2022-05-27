@@ -6,7 +6,7 @@ library(htmltools)
 ```
 
 ```{r icon_slides, include=FALSE}
-# Insert Slide links with FA Icon
+# Insert Slide links with FA Icon (not use, bc begin newline)
 icon_slides <- function(url) {
    tagList(
        fa("file-powerpoint", fill = "maroon"), HTML("&nbsp;"),
@@ -16,19 +16,30 @@ icon_slides <- function(url) {
 ```
 
 
+```{r icon_yt, include=FALSE}
+# Insert YouTube link with Icon (not use, bc begin newline)
+icon_yt <- function(text, url) {
+    tagList(
+        fa("youtube", fill = "red"), HTML("&nbsp;"),
+        tags$a(href = url, text)
+    )
+}
+```
 
-::: {.slide-deck}
-**Unit 1: R First Step**
-
-`r icon_slides("https://docs.google.com/presentation/d/1GwpYynU4XmX0XZ6jSkdpp9KHQ2hMcS0P65CUbq7oKOs/edit?usp=sharing")`
-
-:::
+## Slides
 
 
-### How to Download Code
+`r fa("file-powerpoint", fill = "maroon")` &nbsp; [Introduction to R programming](https://docs.google.com/presentation/d/1GwpYynU4XmX0XZ6jSkdpp9KHQ2hMcS0P65CUbq7oKOs/edit?usp=sharing)
 
-1. Go to: **[`r4sips` code material `r fa("github")`](https://github.com/Lightbridge-KS/r4sips-material)** 
 
-2. Go to: `Code` -> `Download Zip` (as in @fig-gh-dl)
+## Recording
+
+`r fa("youtube", fill = "red")` &nbsp; [Class 1 (Zoom)](https://youtu.be/ILHRPbOa_js)
+
+## How to Download Code
+
+Code repository เก็บอยู่ที่ **[`r4sips` code material `r fa("github")`](https://github.com/Lightbridge-KS/r4sips-material)** 
+
+ถ้าต้องการ download code ทั้ง repository คลิกที่ `Code` -> `Download Zip` (@fig-gh-dl)
 
 ![How to download code from GitHub](/images/material/github-dl-zip.png){#fig-gh-dl width="60%"}
