@@ -26,7 +26,7 @@ book:
       - "contents/tools.qmd"
     - references.qmd
 
-
+lang: th
 bibliography: references.bib
 
 format:

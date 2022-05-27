@@ -5,7 +5,7 @@ description-meta: |
 
 ## Welcome {.unnumbered}
 
-I create this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital.
+I create this tutorial for teaching **R programming** for staff and students in the Department of Physiology, Faculty of Medicine Siriraj Hospital. The materials are in Thai language.
 
 ## Remark
 
