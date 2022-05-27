@@ -17,7 +17,7 @@
 
 **R package**
 
--   R package เป็นเหมือนกับ extension หรือ plugin ของ R ที่่เพิิ่มความสามารถด้านต่างๆ  หากเปรียบ R เป็น smartphone แล้ว R package เปรียบเสมือนกับกับ appliation ที่ติดตั้งลงมา ปัจจุบันมี R packge ซึ่งถูกพัฒนาจาก developer จากทุกมุมโลกมากมาย (อ่านเพิ่มที่ @sec-rpkg)
+-   R package เป็นเหมือนกับ extension หรือ plugin ของ R ที่เพิ่มความสามารถด้านต่างๆ  หากเปรียบ R เป็น smartphone แล้ว R package เปรียบเสมือนกับกับ appliation ที่ติดตั้งลงมา ปัจจุบันมี R packge ซึ่งถูกพัฒนาจาก developer จากทุกมุมโลกมากมาย (อ่านเพิ่มที่ @sec-rpkg)
 
 
 ## Install R {#sec-install-r}
