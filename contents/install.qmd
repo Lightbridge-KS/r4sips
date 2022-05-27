@@ -1,15 +1,26 @@
-# Install R & RStudio
+# Installation
 
 
-## What is R
+## Introduction
+
+**R**
 
 -   เมื่อเรากล่าวถึง **R** มักจะหมายถึง [R programming language](https://en.wikipedia.org/wiki/R_(programming_language)).
 
 -   ปกติแล้ว R จะไม่ได้ถูกติดตั้งบน computer เราจะต้อง download จาก [The Comprehensive R Archive Network](https://cran.r-project.org) ซึ่งถูกพัฒนาโดยกลุ่ม R developer ที่มักถูกเรียกว่า R-core team ซึ่งทำให้เรามี R software มาใช้งานได้แบบฟรี
 
--   เมื่อเรา install R แล้ว เราสามารถเขียน **R code** เป็นคำศัพท์ภาษาอังกฤษที่คนเราอ่านออกได้ และป้อนคำสั่งให้ R interpreter แปลความหมายเป็นภาษาเครื่อง และปฏิบัติงานตามที่เราสั่ง
+-   เมื่อเรา install R แล้ว เราสามารถเขียน **R code** เป็นคำศัพท์ภาษาอังกฤษที่คนเราอ่านออกได้ และป้อนคำสั่งให้ R interpreter แปลความหมายเป็นภาษาเครื่อง และปฏิบัติงานตามที่เราสั่ง (ดูวิธีการ install ที่ @sec-install-r)
 
-## Install R
+**RStudio**
+
+-   [RStudio](https://www.rstudio.com) เป็นบริษัทที่สร้าง application ในชื่อเดียวกัน ช่วยให้เราสามารถใช้งานภาษา R ได้ง่ายขึ้นในงานด้าน data science (ดูวิธีการ install ที่ @sec-install-rstudio)
+
+**R package**
+
+-   R package เป็นเหมือนกับ extension หรือ plugin ของ R ที่่เพิิ่มความสามารถด้านต่างๆ  หากเปรียบ R เป็น smartphone แล้ว R package เปรียบเสมือนกับกับ appliation ที่ติดตั้งลงมา ปัจจุบันมี R packge ซึ่งถูกพัฒนาจาก developer จากทุกมุมโลกมากมาย (อ่านเพิ่มที่ @sec-rpkg)
+
+
+## Install R {#sec-install-r}
 
 1.  ไปที่ <https://cran.r-project.org>
 
@@ -91,3 +102,66 @@ RStudio นี้มีในรูปแบบที่เป็น open source
 ผมแนะนำ **RStudio Desktop (Open Source Edition)** ซึ่งคิดว่าเพียงพอแล้วสำหรับการใช้งานทั่วๆ ไป 
 
 ถ้าต้องการใช้ R และ RStudio บน clould โดยไม่ต้องติดตั้งอะไรบนเครื่อง สามารถลองใช้ [RStudio Cloud](https://rstudio.cloud) ได้ แต่ถ้าหากเป็นไปได้แนะนำให้ใช้ตัว desktop เนื่องจากหนังสือเล่มนี้จะอ้างอิงจากตัวนี้เป็นหลัก
+
+## R Package {#sec-rpkg}
+
+R package สามารถเขียนได้จากทุกคนที่ใช้ R ได้ ดังนั้นจึงมี R package มากมาย ซึ่งจะถูกเก็บรวบรวมไว้ใน repository ตามแหล่งต่างๆ ส่วนใหญ่สามารถเข้าถึงได้ online แบบ free ทั้งนั้น ซึ่ง repository ที่นิยมกันได้แก่ 
+
+-   [The Comprehensive R Archive Network](https://cran.r-project.org/web/packages/available_packages_by_name.html): นอกจากจะพัฒนา R แล้ว ก็เป็นแหล่งที่รวม R package ด้วย โดย R package จาก CRAN นี้จะได้รับการควบคุมคุณภาพอย่างดี ดังนั้นจึงได้รับความน่าเชื่อถือสูง เป็นแหล่ง official R package ที่ได้รับความนิยมเป็นอย่างมาก
+
+-   [Bioconductor](https://www.bioconductor.org): เป็นแหล่งรวม R package ในวงทางด้าน biomedical science, molecular biology, genomic data
+
+-   [GitHub](https://github.com): เป็น code platform ที่รวม software หลากหลาย โดยก็มี R package อยู่ในนี้มาก ซึ่งเป็นแหล่งที่ดีในการ share R package โดยไม่มีข้อจำกัดมาก เหมาะในการทดลองไอเดียใหม่ๆ
+
+## Using R Package
+
+### Installation
+
+ก่อนจะใช้ R package เราต้อง download และ install ลงเครื่องก่อน (เปรียบเสมือน download application ลง smartphone) การ install มีได้หลายวิธี ในที่นี้จะเสนอวิธีที่ได้รับการนิยม
+
+**CRAN:**
+
+คำสั่ง `install.packages()` จะเป็นการ download และ install R package จาก CRAN เช่น
+
+Install [ggplot2](https://CRAN.R-project.org/package=ggplot2) จาก CRAN ด้วย:
+
+```r
+install.packages("ggplot2")
+```
+
+**GitHub:**
+
+หากจะ install package จาก GitHub จะต้องใช้ package เสริม เป็นตัวช่วย install เช่น [`{devtools}`](https://devtools.r-lib.org/index.html) หรือ [`{remotes}`](https://remotes.r-lib.org) package 
+
+เช่น Install R package จาก GitHub โดยใช้ [remotes](https://remotes.r-lib.org):
+
+1. Install `{remotes}` ก่อน
+
+```r
+install.packages("remotes")
+```
+
+2. ใช้ `remotes` install package จาก GitHub โดยระบุ package ที่ต้องการในรูปแบบ `owner/repository` เช่น ถ้าหากต้องการ install [ggplot2](https://github.com/tidyverse/ggplot2) จาก tidyverse:
+
+```r
+remotes::install_github("tidyverse/ggplot2")
+```
+
+
+### Load package
+
+หากได้ install package แล้ว ก่อนจะใช้่งานให้ load package ลง memory (เปรียบเสมือนเปิด application มาใช้งาน) ด้วย `library()` 
+
+```{r}
+# Load ggplot2
+library(ggplot2)
+```
+
+จากนั้นจึงสามารถใช้คำสั่งจาก `ggplot2` package ได้:
+
+```{r}
+ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
+    geom_point()
+```
+
+
